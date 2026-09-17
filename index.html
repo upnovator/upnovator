@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>UPNovator | From Ideas to Intelligent Systems</title>
 
-    <meta name="description"
-          content="UPNovator — From Ideas to Intelligent Systems">
+    <meta
+        name="description"
+        content="UPNovator - From Ideas to Intelligent Systems"
+    >
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
         }
 
         body {
@@ -25,71 +31,138 @@
             justify-content: center;
 
             background:
-                radial-gradient(circle at center, #ffffff 0%, #f5f6f7 100%);
+                radial-gradient(
+                    circle at center,
+                    #ffffff 0%,
+                    #f5f6f8 65%,
+                    #eceff2 100%
+                );
 
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: #2f3439;
         }
 
         .container {
-            width: 90%;
-            max-width: 1000px;
+            width: 92%;
+            max-width: 1200px;
             text-align: center;
+            padding: 50px 20px;
         }
 
         .logo {
-            width: min(850px, 100%);
+            display: block;
+            width: 100%;
+            max-width: 1000px;
             height: auto;
+            margin: 0 auto;
         }
 
         .slogan-en {
-            margin-top: 30px;
-            font-size: 20px;
+            margin-top: 34px;
+
+            font-size: 22px;
+            font-weight: 400;
+
             letter-spacing: 5px;
-            color: #34383d;
+
+            color: #3d434a;
         }
 
         .divider {
-            width: 350px;
+            width: 420px;
             max-width: 70%;
-            height: 1px;
-            margin: 22px auto;
-            background: linear-gradient(
-                90deg,
-                transparent,
-                #1269b0,
-                #9b102c,
-                transparent
-            );
+            height: 2px;
+
+            margin: 24px auto;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent 0%,
+                    #0d6db8 28%,
+                    #9e1230 72%,
+                    transparent 100%
+                );
         }
 
         .slogan-ru {
-            font-size: 15px;
+            font-size: 16px;
+            font-weight: 400;
+
             letter-spacing: 3px;
-            color: #686d72;
+
+            color: #6a7077;
         }
 
-        .coming {
-            margin-top: 55px;
-            font-size: 11px;
-            letter-spacing: 6px;
-            color: #999;
+        .coming-soon {
+            margin-top: 58px;
+
+            font-size: 12px;
+            font-weight: 500;
+
+            letter-spacing: 7px;
+
             text-transform: uppercase;
+
+            color: #8a9096;
         }
 
-        @media (max-width: 650px) {
+        .domain {
+            margin-top: 14px;
+
+            font-size: 12px;
+            letter-spacing: 2px;
+
+            color: #a1a6ab;
+        }
+
+        @media (max-width: 768px) {
+
+            .container {
+                width: 94%;
+                padding: 30px 15px;
+            }
+
+            .logo {
+                max-width: 100%;
+            }
 
             .slogan-en {
-                font-size: 14px;
+                margin-top: 26px;
+
+                font-size: 15px;
                 letter-spacing: 2px;
+
+                line-height: 1.6;
+            }
+
+            .divider {
+                width: 260px;
+                margin: 18px auto;
             }
 
             .slogan-ru {
                 font-size: 12px;
                 letter-spacing: 1px;
+
+                line-height: 1.6;
             }
 
-        }
+            .coming-soon {
+                margin-top: 42px;
 
+                font-size: 10px;
+                letter-spacing: 5px;
+            }
+
+            .domain {
+                font-size: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -98,7 +171,7 @@
     <main class="container">
 
         <img
-            src="assets/upnovator-logo.png"
+            src="upnovator-logo.png"
             alt="UPNovator"
             class="logo"
         >
@@ -113,12 +186,15 @@
             От идей к интеллектуальным системам
         </div>
 
-        <div class="coming">
+        <div class="coming-soon">
             Coming Soon
+        </div>
+
+        <div class="domain">
+            upnovator.com
         </div>
 
     </main>
 
 </body>
-
 </html>
